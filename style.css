@@ -37,9 +37,13 @@ p{
 .carousel-item {
   text-align: center;
 }
-/* .carousel {
-    height: 800px;
-  } */
+.carousel-caption {
+    max-width: 100%;
+    width:100%;
+    background-color: #ffb81c;
+    left: 0;
+    bottom: 0;
+}
 
 .icon{
     margin: 5%;
@@ -97,7 +101,7 @@ a:hover{
         to bottom,
         transparent,
         black
-    )
+    );
 }
 
 .sizer{
