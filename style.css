@@ -104,6 +104,16 @@ a:hover{
     );
 }
 
-.sizer{
-    width:100%
+.slide-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.slide-link{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.slide-link:hover{
+    color:#B7094C;
 }
