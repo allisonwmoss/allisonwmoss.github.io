@@ -40,8 +40,8 @@ p{
 
 .icon{
     margin: 5%;
-    background-color: white;
-    border: 5px solid white;
+    background-color: #B7094C;
+    border: 5px solid #B7094C;
     border-radius: 5%;
     /* display:inline; */
     max-width: 150px;
@@ -51,7 +51,40 @@ p{
 
 }
 
-.transparent{
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    color: #13131f;
+}
+
+.debuggreen{
+    background-color:greenyellow;
+}
+
+.debugred{
+    background-color: red;
+}
+
+.debugblue{
+    background-color: blue;
+}
+
+.card{
     background-color: #B7094C;
-    border: 5px solid #B7094C;
+    border: 1px solid #B7094C;
+}
+
+/* .card p{
+    color: white;
+} */
+
+.special{
+    background-color: #B7094C;
+    border: 1px solid #B7094C;
+}
+
+.special2{
+    border:none;
 }
