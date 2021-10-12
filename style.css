@@ -20,21 +20,24 @@ p{
     font-size: 1.5em;
 }
 
-/* .carousel{
-    max-width: 800px;
-} */
+.carousel{
+    max-width: 1000px;
+    max-height: 1000px;
+}
 
-/* .carousel-item,
+.carousel-item,
 .carousel-inner,
 .carousel-inner img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
+  max-height: 1000px;
+  max-width: 1000px;
 }
 
 .carousel-item {
   text-align: center;
 }
-.carousel {
+/* .carousel {
     height: 800px;
   } */
 
@@ -60,6 +63,7 @@ a{
 }
 a:hover{
     color: #13131f;
+    transition: 0.3s ease-out;
 }
 
 .debuggreen{
@@ -86,4 +90,16 @@ a:hover{
 
 .special2{
     border:none;
+}
+
+.custom-gradient{
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        black
+    )
+}
+
+.sizer{
+    width:100%
 }
