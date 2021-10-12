@@ -1,0 +1,26 @@
+PROJECT 1 PROPOSAL
+by Allison Moss, SEI 8-02 2021
+
+Project Choice: Simon
+
+Project Description: A version of the classic Simon game appears as a minigame in one of my favorite ways to waste time, Stardew Valley, where the player is asked to repeat a sequence of colors of crystals in three increasingly difficult patterns. This inspired me to create a version of the Simon game using different colored Junimos, which are little sprites that appear in the game. The player will be shown a randomly-generated sequence of colored junimos bouncing, and will then have to repeat that sequence. If they don't match the sequence, the player will lose and the game will reset. If the player gets it correct, they will collect a Stardrop--one of the most sought-after items in Stardew Valley, which functions as a power-up--and advance to another round, where the sequence they have to remember will be longer. This will run for 3-5 rounds, and I may allow the user to choose the number of rounds they play. Users will also have the option to reset the game at any point. In the future, I would like to add multiplayer functionality, but it will be single-player for now. 
+*Note: I plan to credit the creator and art director of the game, Eric Barrone, in both the code itself and on the page rendered for the user. I believe this doesn't run afoul of fair use legally since I will not monetize the project, but if you feel that this is inappropriate from a plagiarism standpoint, please let me know and I will choose a different theme.
+
+User Stories:
+
+MVP Goals 
+As a player, I want the game to...
+Offer to explain the game to me before playing.
+Show me what the correct pattern is that I need to match, using animation of the Junimos to indicate the colors of the pattern. x
+Animate each Junimo when I click or hover over it, so I know which one I'm targeting. 
+Allow me to restart the game at any time. x
+Tell me when I get the pattern correct, and track my score in a way that I can see. x
+Inform me that I have lost if I get the pattern incorrect. x
+Inform me when I win the game.
+
+Stretch Goals
+As a player, I want the game to...
+Use a modal to have the game rules appear in a box, which I can then click out of to hide.
+Show me a cute animation of all the junimos jumping up and down at random when I win. 
+Give me an option of how many rounds I'd like to play, like Easy, Medium, and Hard modes, so that I can ease into the game or really put my skills to the test. 
+Require me to repeat the given pattern within a certain amount of time, and show me the time I have left as it ticks down. 

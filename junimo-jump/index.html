@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Junimo Jump</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Junimo Jump!</h1>
+        <div class="hidden">
+            <div class="container" id="instruction"></div>
+            <div class="timer" id="timer-box">
+            </div>
+        </div>
+        <div class="container-vert">
+            <div class="rules-box">
+                <div class="rules-junimo" id="rules">?</div>
+                <p id="rules-description">
+                    Junimo Jump tests your memory and speed. You'll be shown a sequence of
+                    colors, then you'll holler it back.
+                </p>
+            </div>
+        </div>
+        <div class="container-vert">
+            <h2>Choose your game mode</h2>
+        </div>
+        <div class="container" id="difficulty-selection">
+            <div class="container-horiz" id="diff-junimos-selection">
+                <div class="difficulty-box" id="easy-mode">
+                    <div class="difficulty-junimo" id="green-diff">easy</div>
+                    <p class="diff-description" id="easy">For new players &amp; casual cultivators. Start off
+                        nice
+                        'n' easy.
+                    </p>
+                </div>
+                <div class="difficulty-box" id="medium-mode">
+                    <div class="difficulty-junimo" id="yellow-diff">medium</div>
+                    <p class="diff-description" id="medium">If this ain't your first rodeo, Medium mode is for you.</p>
+                </div>
+                <div class="difficulty-box" id="hard-mode">
+                    <div class="difficulty-junimo" id="red-diff">hard</div>
+                    <p class="diff-description" id="hard">We reckon this'll challenge ya.</p>
+                </div>
+                <div class="difficulty-box" id="prairie-king">
+                    <div class="difficulty-junimo" id="purple-diff">pk</div>
+                    <p class="diff-description" id="prairie">In Prairie King mode, once you hop, the fun don't stop.
+                        Play 'til you drop!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="gameplay">
+            <div id="junimo-container">
+                <div class="junimo" id="red"></div>
+                <div class="junimo" id="yellow"></div>
+                <div class="junimo" id="blue"></div>
+                <div class="junimo" id="purple"></div>
+                <div class="junimo" id="green"></div>
+            </div>
+            <div class="hidden" id="bottom">
+                <!-- <div class="buttons-box"> -->
+                <button class="btn" id="reset-button">RESET</button>
+                <!-- </div> -->
+                <div id="score-div">
+                    <h3>Your Score</h3>
+                    <div class="container-horiz" id="score-box">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="concerned-ape">
+            <p>Stardew Valley &copy;2016-2021 ConcernedApe LLC. Junimo Jump is not affiliated with ConcernedApe LLC.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

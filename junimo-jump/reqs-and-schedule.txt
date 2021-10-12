@@ -1,0 +1,92 @@
+PROJECT REQUIREMENTS
+Your app must:
+Render in the browser x
+Include separate HTML / CSS / JavaScript files x
+Use Javascript for DOM manipulation x
+Be deployed online using Github Project pages. x
+Use semantic, valid markup for HTML and CSS (must pass validation without errors) x
+Show a good commit history with frequent commits (minimum of one commit per project day) 
+
+Technical Requirements:
+ Project code is pushed to a public Git repository x
+ Project is deployed on the internet (Github Pages, Netlify Drop, Surge.sh) x
+ Uses HTML, CSS, and JS for game solution x
+ Use Javascript vanilla API for DOM manipulation x
+ Uses Event listening to handle user interaction x
+
+ Creativity and Interface:
+ Uses CSS to style DOM elements x
+ Uses CSS to structure DOM element layout on screen x
+
+ Code Quality:
+ HTML, CSS, and JS are in seperate files x
+ Names (variables, functions, HTML ids, HTML classes, etc.) follow a naming convention x
+ Consistent indentation x
+
+ Functionality:
+ Render a game in the browser x
+ User can play single iteration of game x
+ User can win/tie when winning conditions are met x
+ User can lose when losing conditions are met x
+
+ Planning/Process/Submission:
+ At least 30 git commits made throughout project week x
+ Has Readme file x
+ Readme file has link to deployed app
+ 
+**************************************************************************************************************************************************************************
+SIMON
+Simon is a test of memory. Have your program choose a sequence of different colors at random and then prompt your player repeat the sequence allowing them to go to advance to next round if the player is successful.
+Bonus:
+Add timer-based scoring x
+Track scores across games (even if the page is reloaded)
+**************************************************************************************************************************************************************************
+GOALS/MILESTONES
+
+Thursday 8/19: Create new git repository for project x, choose project idea x, complete and submit project proposal x.
+
+Friday 8/20: Create HTML, CSS, and JS files and connect. x
+Write user stories and pseudocode the basic structure of the project. x
+Complete the HTML file and begin working in the JS file, if time allows. x
+
+Monday 8/23: Fix junimo sequence animation delay so that it is correct no matter how many junimos are in the sequence. x
+Add an ultimate win condition. x
+Fix junimo hover animation, which currently does not run when the player is selecting junimos for the echo sequence. x
+Explore ways for players to indicate how hard they want the game to be at start. x
+Fix reset button for new dynamic game mode. x
+Slack Github repo link to Ben. x
+Fix animation delay issue where animation starts playing too quickly after turn starts. x
+Reorganize app.js code for readability. Test to ensure everything still works. x
+
+Tuesday 8/24: 
+Add an animation to run upon ultimate win condition. x 
+Fix bug where second round on Easy mode presents sequence of four colors instead of two. x
+Block reset button until after the player has finished seeing the celebration animation, to avoid a bug where they are still seeing the celebration animation when the next playthrough begins. x
+Add an outcome image that shows when the game ends, and changes according to whether the player won or lost. x
+Add a timeout for the player to repeat the sequence. x
+Add visual representation of the player turn timeout. x  
+Add special outcome image of purple junimo in cowboy hat for players who lose while in Prairie King mode, since loss is guaranteed. x
+Design and implement the game rules box. Maybe this could become visible upon hover over a game mode option, on that screen. x
+
+Wednesday 8/25: 
+Make new wireframe designs for the landing view, game round view, and outcome view on desktop and mobile. x
+Complete styling and testing. x
+Add media queries for mobile optimization. X
+Attend Outcomes from 1:30-3:00. x
+
+Thursday 8/26: 
+Fix the timeout outcome of Prairie King mode so that it’s the usual Prairie King outcome. x
+Screen height on the winning outcome screen is too tall for a standard laptop—make the  height smaller and/or the outcome image smaller x
+Resolve issue on smaller screens where it is difficult or impossible to start the game due to the hover/hop effect on the mode choice divs. x
+Clean up all files and remove deprecated code. x
+Resolve any remaining issues. x
+Final testing. x
+Deploy to GitHub Pages. x
+Add link to deployed app in README file. x
+Prepare and rehearse presentation.
+
+***************************************************************************************************************************************************************************
+
+LESSONS/TAKEAWAYS:
+-I'm grateful that I left myself with so much time to complete the styling. 
+-Next time I should probably do the styling before writing the JS.

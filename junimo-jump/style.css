@@ -1,0 +1,409 @@
+/* Stardew Valley copyright 2016-2021 ConcernedApe LLC. Art and concept by Eric Barrone. */
+/* Junimo and Stardrop icons via @EeveeKevin: https://www.pixilart.com/eeveekevin . */
+
+/* Fonts: */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    background-color:cornflowerblue;
+    color: white;
+    font-family: 'Permanent Marker', serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    border:1px indigo;
+    border-radius: 20%;
+    background-color:indigo;
+    color: white;
+    font-family: 'Permanent Marker', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+button:hover{
+    background-color:mediumpurple;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    max-height: 800px;
+}
+
+.container-horiz {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-vert {
+    display: flex;
+    font-size: 1.2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruction{
+    max-width: 300px;
+    text-align: center;
+}
+
+.junimo {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+.concerned-ape {
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.timer {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    font-size: 4em;
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 30px;
+}
+
+#timer-box {
+    display: none;
+}
+
+/* Gameplay junimos */
+#junimo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+#red {
+    background-image: url('images/red-junimo.png');
+}
+
+#yellow {
+    background-image: url('images/yellow-junimo.png')
+}
+
+#blue {
+    background-image: url('images/blue-junimo.png')
+}
+
+#purple {
+    background-image: url('images/purple-junimo.png')
+}
+
+#green {
+    background-image: url('images/green-junimo.png')
+}
+
+/* Scores and win/lose views */
+.stardrop {
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-image: url('images/stardrop.png')
+}
+.outcome {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180px;
+    margin-bottom: 10px;
+}
+
+#score-div {
+    display:flex;
+    align-self: flex-start;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 30px;
+    font-size: 1.5em;
+}
+
+#win {
+    background-image: url('images/stardrop.png')
+}
+
+#lose {
+    background-image: url('images/lose-icon.png')
+}
+
+#prairie-king-lose {
+background-image: url('images/prairie-icon.png')
+}
+
+/* Rules for landing view */
+.difficulty-box {
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.difficulty-box p {
+    display: none;
+    font-size: 1.3em;
+}
+
+.difficulty-junimo {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.6em;
+    overflow-wrap: break-word;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.rules-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 300px;
+    align-self: center;
+}
+
+#rules {
+    background-image: url('images/blue-junimo.png');
+    background-size: 150px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Permanent Marker', serif;
+    color: black;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+
+#rules-description{
+   display: none;
+   text-align: center;
+}
+
+#difficulty-selection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    min-width: 200px;
+    max-height: 800px;
+}
+
+#red-diff {
+    background-image: url('images/red-junimo.png');
+}
+
+#yellow-diff {
+    background-image: url('images/yellow-junimo.png')
+}
+
+#purple-diff {
+    background-image: url('images/purple-junimo.png')
+}
+
+#green-diff {
+    background-image: url('images/green-junimo.png')
+}
+
+/* Rules for smaller screens */
+@media (max-width:475px) and (max-height: 1000px){
+.difficulty-junimo {
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+#rules {
+    background-image: url('images/blue-junimo.png');
+    background-size: 100px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Permanent Marker', serif;
+    color: black;
+    width: 150px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.difficulty-box {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+
+.rules-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 150px;
+    align-self: center;   
+} 
+
+#rules {
+    background-image: url('images/blue-junimo.png');
+    background-size: 100px;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Permanent Marker', serif;
+    color: black;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.junimo {
+    width: 150px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
+.stardrop {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-image: url('images/stardrop.png')
+}
+
+h1 {
+    font-size: 1.7em;
+}
+.instruction {
+    font-size: 1.5em;
+}
+
+.outcome{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    margin-bottom: 5px;
+}
+
+button{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    border:1px indigo;
+    border-radius: 20%;
+    background-color:indigo;
+    color: white;
+    font-family: 'Permanent Marker', serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    font-size: 2em;
+    border: 5px solid white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+}
+
+}

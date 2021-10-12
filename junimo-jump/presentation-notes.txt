@@ -1,0 +1,39 @@
+***Remember: Turn on Do Not Disturb before beginning presentation***
+
+Pull up the game and invite them to do the same (and to see how it looks on mobile)
+
+I chose to create a Simon-style game
+Players are shown a sequence of colors and must repeat that sequence back
+I have lost many hours of my life to a game called Stardew Valley, so I decided to theme the game after that
+
+Players are given a choice of game mode
+Easy begins with one color, then two, then three
+Medium begins with 3 colors, then 4, then 5
+Hard begins with 5 colors, then 6, then 7
+Prairie King mode begins with one color, and continues until the player loses
+In every mode except Prairie King, the player will win if they successfully complete 3 rounds
+
+Extra things I added:
+Different views for landing and playing using DOM manipulation
+Game mode options to adjust difficulty
+A cute little animation that runs if you win
+A timer runs on the player's turn and is displayed on the screen
+A reset button allows the player to hard-reset the game to its neutral state and the landing view
+Tried to make it look good on smaller screens
+
+Biggest things I learned: 
+Working with asynchronous functions, setTimeout, and setInterval; 
+Using some tools I was already familiar with to create wireframes; 
+Planning out a time-sensitive project with given requirements; 
+How to organize and re-organize code in a medium-to-large project; 
+How to create basic animations using DOM manipulation; 
+How to have multiple “views” of a single page that appear or hide based on events.
+
+What I still want to add: 
+Adjust the player turn timeout so that it gets slightly longer each turn rather than being a static 5 seconds. 
+Add ability to track scores across multiple sessions using cookies/session. 
+Change the way scores are tracked for Prairie King mode, because currently I think the score box would eventually break the page if you were able to keep playing for a long time. 
+Fix a bug one of my play testers found--apparently the timer can get screwed up if you play many rounds in a row
+
+What I would do differently if I could do it over: 
+I would begin by building the HTML and CSS out, then write the javascript. I found myself having to add a lot of variables and junk to my js file during the CSS phase because I realized that I wanted certain extra things to appear or hide or pop up dynamically behave differently and I needed the DOM to do that
